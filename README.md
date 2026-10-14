@@ -1,6 +1,6 @@
 # java-basics-projects
 Small Java projects to practise programming fundamentals.
-# Student Marks Calculator
+# 1. Student Marks Calculator
 
 A Java console application that reads a student's name and marks in five subjects, then calculates their total, percentage, result, and grade.
 

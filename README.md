@@ -57,3 +57,27 @@ Alternatively, run each project separately in IntelliJ IDEA.
 ## Current Limitation
 
 Both projects expect numeric input when requesting numbers. Handling text entered in place of a number is not implemented.
+
+## 3. Number Guessing Game
+
+A Java console game where the player has seven attempts to guess a randomly generated number between 1 and 100.
+
+**Features**
+- Generates a random secret number for each run.
+- Gives “Too High” and “Too Low” hints.
+- Counts guesses and limits the player to seven attempts.
+- Ends immediately when the player guesses correctly.
+- Reveals the secret number when the player loses.
+
+**What I learned**
+- Generating numbers using `Random` and `nextInt()`.
+- Creating a random number within a specific range.
+- Tracking attempts using a counter and `++`.
+- Tracking the outcome using a `boolean`.
+- Using `!` to negate a boolean condition.
+- Using `break` to exit a loop.
+- Keeping variables outside a loop so their values persist between iterations.
+
+**Limitations**
+- Expects whole-number input; non-numeric input is not handled.
+- Guesses outside 1–100 are accepted and count as attempts.

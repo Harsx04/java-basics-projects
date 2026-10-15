@@ -1,49 +1,59 @@
-# java-basics-projects
-Small Java projects to practise programming fundamentals.
-# 1. Student Marks Calculator
+# Java Basics Projects
 
-A Java console application that reads a student's name and marks in five subjects, then calculates their total, percentage, result, and grade.
+My collection of small Java console projects, built while learning programming through hands-on practice.
 
-## Features
+## 1. Student Marks Calculator
 
-- Accepts marks for Maths, English, Science, Hindi, and Computer.
-- Validates that each mark is between 0 and 100.
-- Lets the user retry invalid marks.
-- Calculates total marks out of 500 and percentage.
-- Requires at least 35 marks in every subject to pass.
-- Assigns grades based on percentage; failing any subject results in Grade F.
-- Supports multiple students during one run.
+Reads a student's name and marks in five subjects, then displays their total, percentage, pass/fail result, and grade.
 
-## What I Learned
+**Features**
+- Validates marks between 0 and 100 and allows retries.
+- Requires at least 35 in every subject to pass.
+- Calculates total, percentage, and grade.
+- Supports multiple students in one run.
 
-- Reading keyboard input using `Scanner`.
-- Using `String`, `int`, and `double` variables.
-- Calculating totals and percentages.
-- Understanding integer division versus decimal division.
-- Using `if`, `else if`, and nested conditions.
-- Using `||` for OR and `&&` for AND.
-- Using `while` loops for input validation.
-- Using a `do-while` loop to repeat the program.
-- Comparing text using `equalsIgnoreCase()`.
-- Handling the newline left after `nextInt()`.
-- Testing boundary values such as 0, 35, and 100.
+**What I learned**
+- Input using `Scanner`.
+- Variables, data types, and arithmetic.
+- Integer division versus decimal division.
+- Conditions and logical operators.
+- `while` and `do-while` loops.
+- String comparison using `equalsIgnoreCase()`.
 
-## How to Run
+## 2. Menu-Based Calculator
 
-With a JDK installed, open a terminal in this project's folder:
+Performs addition, subtraction, multiplication, and division through a repeating menu.
+
+Includes two versions:
+- **Basic version:** calculations inside the menu cases.
+- **Methods version:** separate methods for each calculation.
+
+**Features**
+- Accepts decimal numbers.
+- Handles division by zero.
+- Displays a message for invalid menu choices.
+- Repeats until the user chooses Exit.
+
+**What I learned**
+- Menu selection using `switch`, `case`, `break`, and `default`.
+- Reading decimal input using `nextDouble()`.
+- Repeating a menu using `do-while`.
+- Creating and calling static methods.
+- Parameters, arguments, return values, and variable scope.
+
+## Running the Projects
+
+With a JDK installed, open a terminal in the folder containing the version's `Main.java`, then run:
 
 ```text
-javac src/Main.java
-java -cp src Main
+javac Main.java
+java Main
 ```
 
-Alternatively, open the project in IntelliJ IDEA and run `Main.main()`.
+For the Student Marks Calculator, this is its `src` folder.
 
-## Limitations
+Alternatively, run each project separately in IntelliJ IDEA.
 
-- Marks must be entered as whole numbers. Non-numeric input is not handled yet.
-- Results are displayed in the terminal and are not saved.
+## Current Limitation
 
-## Status
-
-Complete — the planned features and multiple-student challenge are implemented.
+Both projects expect numeric input when requesting numbers. Handling text entered in place of a number is not implemented.

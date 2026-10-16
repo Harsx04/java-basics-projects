@@ -1,4 +1,4 @@
-# Java Basics Projects
+# Java intermediate Projects
 
 My collection of small Java console projects, built while learning programming through hands-on practice.
 

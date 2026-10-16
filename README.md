@@ -109,3 +109,35 @@ A Java console application that calculates a shopping bill for multiple items, a
 - Expects numeric input when requesting prices, quantities, and item count.
 - Uses `double` for this learning exercise; decimal calculations may show rounding effects.
 - Displays the bill in the terminal without saving it.
+
+## 5. ATM Simulator
+
+A Java console simulation that authenticates a user with a fixed PIN and supports basic balance operations.
+
+**Features**
+- Allows up to three PIN attempts.
+- Prevents menu access after unsuccessful authentication.
+- Starts with a balance of 1,000.
+- Supports balance checks, deposits, and withdrawals.
+- Rejects deposits and withdrawals of zero or less.
+- Prevents withdrawals greater than the available balance.
+- Repeats the menu until the user selects Exit.
+
+**What I learned**
+- Comparing PIN strings using `equals()`.
+- Combining attempt counters, boolean state, and loops.
+- Using `return` to stop execution after failed authentication.
+- Keeping a balance between menu iterations.
+- Updating values using `+=` and `-=`.
+- Validating transactions before changing the balance.
+- Testing that rejected transactions leave the balance unchanged.
+
+**How to Try**
+- Simulation PIN: `1234`
+- Starting balance: `1000.0`
+
+**Limitations**
+- Uses a fixed demonstration PIN and a single account.
+- The balance resets when the program restarts.
+- Expects numeric input for menu choices and transaction amounts.
+- Uses `double` for learning; decimal calculations may show rounding effects.

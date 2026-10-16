@@ -81,3 +81,31 @@ A Java console game where the player has seven attempts to guess a randomly gene
 **Limitations**
 - Expects whole-number input; non-numeric input is not handled.
 - Guesses outside 1–100 are accepted and count as attempts.
+
+## 4. Shopping Bill Generator
+
+A Java console application that calculates a shopping bill for multiple items, applies an eligible discount, and displays the final amount.
+
+**Features**
+- Accepts the number of different items purchased.
+- Reads each item's name, unit price, and quantity.
+- Requires at least one item and a quantity of at least one.
+- Rejects negative prices and allows retries.
+- Calculates each item's cost and the combined subtotal.
+- Applies a 10% discount when the subtotal is 1,000 or more.
+- Displays the subtotal, discount, and final amount.
+
+**What I learned**
+- Processing multiple items using a `for` loop.
+- Keeping a running total using `+=`.
+- Declaring an accumulator outside a loop so it retains its value.
+- Combining input validation loops with a processing loop.
+- Handling the newline left by numeric Scanner input.
+- Calculating percentage discounts.
+- Testing discount boundaries below, at, and above the threshold.
+- Writing comments that explain important rules and decisions.
+
+**Limitations**
+- Expects numeric input when requesting prices, quantities, and item count.
+- Uses `double` for this learning exercise; decimal calculations may show rounding effects.
+- Displays the bill in the terminal without saving it.
